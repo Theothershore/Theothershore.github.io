@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建博客">
 <meta property="og:url" content="https://dh15219984801.store/2020/10/09/title%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="蜗牛的小屋">
 <meta property="og:description" content="一，github注册使用github来托管项目文件 仓库：即你的项目，你想在github上开源一个项目，就必须要新建一个Repository。 创建项目    项目名：用户名.github.io 搭建步骤：创建个人站点–新建仓库（注:仓库名必须是【用户名.github.io】） 个人站点 1https:&#x2F;&#x2F;用户名.github.io  二，安装node打开node官网 1htt">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://mkpt.gzmtu.edu.cn/meol/common/ckeditor/openfile.jsp?id=DBCPDCDCDHDFDJDICPDDDHDFCOHAGOGH">
@@ -41,6 +41,7 @@
 <meta property="article:published_time" content="2020-10-08T16:24:13.474Z">
 <meta property="article:modified_time" content="2020-10-11T02:21:52.958Z">
 <meta property="article:author" content="Theothershore">
+<meta property="article:tag" content="CTF-pwn">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://mkpt.gzmtu.edu.cn/meol/common/ckeditor/openfile.jsp?id=DBCPDCDCDHDFDJDICPDDDHDFCOHAGOGH">
 
@@ -57,7 +58,7 @@
   };
 </script>
 
-  <title>搭建博客 | Hexo</title>
+  <title>搭建博客 | 蜗牛的小屋</title>
   
 
 
@@ -88,6 +89,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="蜗牛的小屋" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -108,9 +110,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">蜗牛的小屋</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Hexo</p>
   </div>
 
   <div class="site-nav-right">
@@ -165,6 +168,7 @@
         <div class="content-wrap">
           
 
+      
           <div class="content post posts-expand">
             
 
@@ -177,11 +181,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/001.jpg">
       <meta itemprop="name" content="Theothershore">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Nothing is impossible!">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="蜗牛的小屋">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -206,6 +210,13 @@
               </span>
 
           
+            <span id="/2020/10/09/title%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-meta-item leancloud_visitors" data-flag-title="搭建博客" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
 
         </div>
       </header>
@@ -404,7 +415,7 @@
     <img class="site-author-image" itemprop="image" alt="Theothershore"
       src="/images/001.jpg">
   <p class="site-author-name" itemprop="name">Theothershore</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Nothing is impossible!</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -417,8 +428,26 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Theothershore" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Theothershore" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://dh15219984801.store/" title="myblog → https:&#x2F;&#x2F;dh15219984801.store&#x2F;"><i class="rss-square fa-fw"></i>myblog</a>
+      </span>
+  </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="university fa-fw"></i>
+      pwn
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://dh15219984801.store/2020/10/03/Pwn%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="https:&#x2F;&#x2F;dh15219984801.store&#x2F;2020&#x2F;10&#x2F;03&#x2F;Pwn%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA&#x2F;">pwn环境搭建</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -451,10 +480,99 @@
         
 
 
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1279338710&web_id=1279338710"></script>
+  </div>
 
 
 
 
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.id);
+      var title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            let target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    let { app_id, app_key, server_url } = {"enable":true,"app_id":"RKBiRBd7jWQqPC1d8ySAFuvL-gzGzoHsz","app_key":"agSURYNoUmvIR576wrgeIxp2","server_url":null,"security":true};
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    let api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
 
 
       </div>
