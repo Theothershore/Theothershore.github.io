@@ -161,6 +161,124 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://dh15219984801.store/2020/10/17/title%20%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/001.jpg">
+      <meta itemprop="name" content="Theothershore">
+      <meta itemprop="description" content="Nothing is impossible!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蜗牛的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/17/title%20%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">博客主题搭建</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-17 23:27:12" itemprop="dateCreated datePublished" datetime="2020-10-17T23:27:12+08:00">2020-10-17</time>
+            </span>
+
+          
+            <span id="/2020/10/17/title%20%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA/" class="post-meta-item leancloud_visitors" data-flag-title="博客主题搭建" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>​                                                                       </p>
+<h4 id="一-使用nexT主题"><a href="#一-使用nexT主题" class="headerlink" title="一.使用nexT主题"></a>一.<strong>使用nexT主题</strong></h4><h5 id="1-1下载nexT主题"><a href="#1-1下载nexT主题" class="headerlink" title="1.1下载nexT主题"></a><strong>1.1下载nexT主题</strong></h5><p>在Git Bash终端执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next1</span><br></pre></td></tr></table></figure>
+
+<p>解压所下载的压缩包至站点的 themes 目录下， 并将解压后的文件夹名称更改为 next 。</p>
+<h5 id="1-2启用nexT主题"><a href="#1-2启用nexT主题" class="headerlink" title="1.2启用nexT主题"></a><strong>1.2启用nexT主题</strong></h5><p>打开站点配置文件 _config.yml，找到 theme 字段，并将其值更改为 next。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next1</span><br></pre></td></tr></table></figure>
+
+<p>在Git Bash终端执行命令hexo s，在浏览器中访问<a target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C%E5%BD%93%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%AB%99%E7%82%B9%E7%9A%84%E5%A4%96%E8%A7%82%E4%B8%8E%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA%E7%B1%BB%E4%BC%BC%E6%97%B6%E5%8D%B3%E8%AF%B4%E6%98%8E%E4%BD%A0%E5%B7%B2%E6%88%90%E5%8A%9F%E5%AE%89%E8%A3%85">http://localhost:4000/，当你看到站点的外观与下图所示类似时即说明你已成功安装</a> NexT 主题。这是 NexT 默认的 Scheme —— Muse。</p>
+<p><img src="https://i.loli.net/2020/10/17/FV7jYTiKBGuPJHA.png" alt="image.png"><br>本博客使用的是NexT.Pisces主题，修改主题配置文件 _config.yml的 Schemes 字段的值为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scheme: Pisces1</span><br></pre></td></tr></table></figure>
+
+<p>博客预览如图：</p>
+<p><img src="https://i.loli.net/2020/10/17/aOKSDqYuRht5VeW.png" alt="image.png"></p>
+<h4 id="二-NexT主题配置"><a href="#二-NexT主题配置" class="headerlink" title="二.NexT主题配置"></a><strong>二.NexT主题配置</strong></h4><h5 id="2-1主题基本设定"><a href="#2-1主题基本设定" class="headerlink" title="2.1主题基本设定"></a><strong>2.1主题基本设定</strong></h5><p>参照<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html#theme-settings">NexT使用文档</a>，设置界面语言、菜单、侧栏、头像、作者昵称和站点描述。由于该使用文档描述非常详细，本文不再赘述。此处需要注意，添加新的菜单项时，需要手动创建该页面才能正常访问，下面以分类页面为例讲述创建新页面的方法：</p>
+<h5 id="2-2创建分类页面"><a href="#2-2创建分类页面" class="headerlink" title="2.2创建分类页面"></a><strong>2.2创建分类页面</strong></h5><p>在Git Bash终端执行命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories1</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3编辑分类页面"><a href="#2-3编辑分类页面" class="headerlink" title="2.3编辑分类页面"></a><strong>2.3编辑分类页面</strong></h5><p>添加页面类型字段，将其值设置为 “categories”，主题将自动为这个页面显示所有分类，如果有启用多说 或者 Disqus 评论，默认页面也会带有评论。需要关闭的话，请添加字段 comments 并将值设置为 false。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false1234</span><br></pre></td></tr></table></figure>
+
+<p>创建标签页的方法同上，只需要将type字段设置为”tags”即可。</p>
+<h5 id="2-4添加侧栏社交链接"><a href="#2-4添加侧栏社交链接" class="headerlink" title="2.4添加侧栏社交链接"></a><strong>2.4添加侧栏社交链接</strong></h5><p>在主题配置文件 _config.yml中Sidebar Settings部分添加字段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Social Links</span><br><span class="line">social:</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;github.com&#x2F;wuxubj</span><br><span class="line">  Weibo: http:&#x2F;&#x2F;weibo.com&#x2F;wuxubj1234</span><br></pre></td></tr></table></figure>
+
+<p>本博客将侧栏社交链接设置居中显示，修改themes\next\source\css_common\components\sidebar\sidebar-author-links.styl文件，添加如下样式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.links-of-author-item &#123;</span><br><span class="line">  text-align: center;</span><br><span class="line">  &#125;123</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-5添加侧栏友情链接"><a href="#2-5添加侧栏友情链接" class="headerlink" title="2.5添加侧栏友情链接"></a><strong>2.5添加侧栏友情链接</strong></h5><p>在主题配置文件 _config.yml中Sidebar Settings部分添加字段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Blogrolls</span><br><span class="line">links_title: 友情链接</span><br><span class="line">links_layout: inline</span><br><span class="line">links_icon: link  # 设置图标</span><br><span class="line">links:</span><br><span class="line">  鱼汐笔记: https:&#x2F;&#x2F;yidongying.github.io&#x2F;123456</span><br></pre></td></tr></table></figure>
+
+<p>本博客侧栏友情链接使用了与侧栏社交链接相同的css样式，但文本左对齐。实现方法为：<br>修改themes\next\layout_macro\sidebar.swig，将如下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class&#x3D;&quot;links-of-blogroll-list&quot;&gt;</span><br><span class="line">  &#123;% for name, link in theme.links %&#125;</span><br><span class="line">    &lt;li class&#x3D;&quot;links-of-blogroll-item&quot;&gt;</span><br><span class="line">      &lt;a href&#x3D;&quot;&#123;&#123; link &#125;&#125;&quot; title&#x3D;&quot;&#123;&#123; name &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt;</span><br><span class="line">        &#123;&#123; name &#125;&#125;</span><br><span class="line">      &lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;li&gt;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">&lt;&#x2F;ul&gt;123456789</span><br></pre></td></tr></table></figure>
+
+<p>修改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for name, link in theme.links %&#125;</span><br><span class="line">  &lt;span class&#x3D;&quot;links-of-author-item&quot; style&#x3D;&quot;text-align:left&quot;&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;&#123;&#123; link &#125;&#125;&quot; title&#x3D;&quot;&#123;&#123; name &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt;</span><br><span class="line">      &#123;&#123; name &#125;&#125;</span><br><span class="line">    &lt;&#x2F;a&gt;</span><br><span class="line">  &lt;&#x2F;span&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="三-NexT主题美化"><a href="#三-NexT主题美化" class="headerlink" title="三. NexT主题美化"></a><strong>三.</strong> <strong>NexT主题美化</strong></h4><h5 id="3-1修改导航栏图标"><a href="#3-1修改导航栏图标" class="headerlink" title="3.1修改导航栏图标"></a><strong>3.1修改导航栏图标</strong></h5><p>NexT 使用的是 <a target="_blank" rel="noopener" href="https://fontawesome.com/?from=io">Font Awesome</a> 提供的图标， <a target="_blank" rel="noopener" href="https://fontawesome.com/?from=io">Font Awesome</a> 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。对应的文件在themes\next\source\vendors\font-awesome中。<br>在<a target="_blank" rel="noopener" href="http://fontawesome.dashgame.com/%E4%B8%AD%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8E%E5%85%B6%E5%90%8D%E7%A7%B0%E7%9A%84%E5%AF%B9%E5%BA%94%EF%BC%8C%E7%94%A8%E6%88%B7%E5%8F%AF%E6%A0%B9%E6%8D%AE%E9%9C%80%E8%A6%81%E4%BF%AE%E6%94%B9%E5%9B%BE%E6%A0%87%E3%80%82%E6%88%91%E7%9A%84menu_icons%E9%85%8D%E7%BD%AE%E4%B8%BA%EF%BC%9A">http://fontawesome.dashgame.com/中有图标与其名称的对应，用户可根据需要修改图标。我的menu_icons配置为：</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">menu_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome</span><br><span class="line">  home: home</span><br><span class="line">  about: user</span><br><span class="line">  categories: th</span><br><span class="line">  tags: tags</span><br><span class="line">  archives: calendar-check-o12345678</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-2-修改文章内链接文本样式"><a href="#3-2-修改文章内链接文本样式" class="headerlink" title="3.2 修改文章内链接文本样式"></a><strong>3.2 修改文章内链接文本样式</strong></h5><p>将链接文本设置为蓝色，鼠标划过时文字颜色加深，并显示下划线。<br>修改文件themes\next\source\css_common\components\post\post.styl，添加如下css样式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.post-body p a&#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #0477ab;</span><br><span class="line">    text-decoration: underline;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;12345678</span><br></pre></td></tr></table></figure>
+
+<p>选择.post-body是为了不影响标题，选择p是为了不影响首页“阅读全文”的显示样式。</p>
+<h5 id="3-3在主题配置文件中添加字段"><a href="#3-3在主题配置文件中添加字段" class="headerlink" title="3.3在主题配置文件中添加字段"></a><strong>3.3在主题配置文件中添加字段</strong></h5><p>在主题配置文件 _config.yml中添加以下字段开启此功能：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4生成sitemap"><a href="#3-4生成sitemap" class="headerlink" title="3.4生成sitemap"></a><strong>3.4生成sitemap</strong></h5><p>Sitemap用于通知搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。<br>执行以下命令，安装插件hexo-generator-sitemap，用于生成sitemap：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-sitemap --save1</span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件 _config.yml中添加如下字段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:</span><br><span class="line">path: sitemap.xml12</span><br></pre></td></tr></table></figure>
+
+<p>执行hexo g，就会在网站根目录生成 sitemap.xml 。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://dh15219984801.store/2020/10/09/title%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -192,7 +310,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-11 10:21:52" itemprop="dateModified" datetime="2020-10-11T10:21:52+08:00">2020-10-11</time>
+                <time title="修改时间：2020-10-17 23:33:31" itemprop="dateModified" datetime="2020-10-17T23:33:31+08:00">2020-10-17</time>
               </span>
 
           
@@ -315,6 +433,7 @@
 <p>进入跟目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题</strong>配置文件</p>
 <p>下一步将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：</p>
 <p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master</p>
+<p>如图：<img src="https://i.loli.net/2020/10/17/IFe8WqKrhXcDZUJ.png" alt="image.png"></p>
 
       
     </div>
@@ -365,7 +484,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-16 11:35:34" itemprop="dateModified" datetime="2020-10-16T11:35:34+08:00">2020-10-16</time>
+                <time title="修改时间：2020-10-18 12:33:55" itemprop="dateModified" datetime="2020-10-18T12:33:55+08:00">2020-10-18</time>
               </span>
 
           
@@ -394,26 +513,29 @@
 <p>继续配置文件sources.list内容，输入命令：gedit  sources.list 打开文件，把文件内容全部删除，再把更新源路径粘贴进来。粘贴后如下图：<img src="https://i.loli.net/2020/10/15/qjYrBins1DmCQNO.png" alt="1602745093_1_.png"></p>
 <p>保存，退出。</p>
 <p>最后更新源：输入命令：apt  update （也可以用apt-get update，<a target="_blank" rel="noopener" href="https://blog.csdn.net/maizousidemao/article/details/79859669">apt与apt-get的区别</a>）。</p>
-<p>开始更新源。</p>
+<p>开始更新源，结果如图。</p>
+<p><img src="https://i.loli.net/2020/10/18/BVcfMtev9A361aN.png" alt="image.png"></p>
 <h4 id="3-必备环境安装"><a href="#3-必备环境安装" class="headerlink" title="3.必备环境安装"></a>3.必备环境安装</h4><p>安装git ：sudo apt-get install git </p>
 <p>安装VIM ：sudo apt-get install vim</p>
 <p>安装完Git之后一般情况情况下，因为特定原因导致，DNS解析出现问题从而使得Git Clone 速度巨慢。解决办法：</p>
-<p>登录网页<a target="_blank" rel="noopener" href="http://www.ipaddress.com/">www.ipaddress.com</a> 查找 <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.global-ssl.fastly.net/">github.global.ssl.fastly.net</a> 和<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.com/">github.com </a>域名对应地址：</p>
+<p>登录网页<a target="_blank" rel="noopener" href="http://www.ipaddress.com/">www.ipaddress.com</a> 查找 <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.global-ssl.fastly.net/">github.glo        t</a> 和<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.com/">github.com </a>域名对应地址：</p>
 <p><img src="https://i.loli.net/2020/10/16/Ff7bySNPGLhn38p.png" alt="image.png"></p>
 <p><img src="https://i.loli.net/2020/10/16/fd6htvrcGemRA1T.png" alt="image.png"></p>
 <p>更改DNS解析地址 ：sudo gedit /etc/hosts</p>
 <p>在其最后加上所查地址：</p>
 <p>151.101.185.194 <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.global-ssl.fastly.net/">github.global.ssl.fastly.net</a></p>
 <p>192.30.253.112  <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=http://github.com/">github.com</a></p>
-<p><img src="https://i.loli.net/2020/10/16/JEjCwZkqgV9fuI3.png" alt="image.png"></p>
 <p>保存退出，重启网卡：sudo /etc/init.d/networking restart</p>
-<h4 id="4-安装pwntools"><a href="#4-安装pwntools" class="headerlink" title="4.安装pwntools"></a>4.安装pwntools</h4><p>参考文献：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a7e2da50263e">https://www.jianshu.com/p/a7e2da50263e</a></p>
+<h4 id="4-安装pwntools"><a href="#4-安装pwntools" class="headerlink" title="4.安装pwntools"></a>4.安装pwntools</h4><p>参考文献：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43613772/article/details/97046215">https://blog.csdn.net/qq_43613772/article/details/97046215</a></p>
 <h5 id="32位依赖库："><a href="#32位依赖库：" class="headerlink" title="32位依赖库："></a>32位依赖库：</h5><p> apt-get install lib32ncurses5</p>
 <p> apt-get install lib32z1</p>
-<h5 id="安装pwndbg："><a href="#安装pwndbg：" class="headerlink" title="安装pwndbg："></a>安装pwndbg：</h5><p>  git clone<a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/pwndbg/pwndbg">https://github.com/pwndbg/pwndbg</a></p>
-<p>  cd pwndbg</p>
-<p>  ./setup.sh</p>
-<h5 id="安装pip："><a href="#安装pip：" class="headerlink" title="安装pip："></a>安装pip：</h5><p>参考文献 ：<a target="_blank" rel="noopener" href="https://blog.csdn.net/mrwxh/article/details/79991339?utm_medium=distribute.pc_relevant.none-task-blog-title-8&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/mrwxh/article/details/79991339?utm_medium=distribute.pc_relevant.none-task-blog-title-8&amp;spm=1001.2101.3001.4242</a></p>
+<h5 id="pwndbg安装"><a href="#pwndbg安装" class="headerlink" title="pwndbg安装"></a><strong>pwndbg安装</strong></h5><p>执行如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;pwndbg&#x2F;pwndbg</span><br><span class="line">cd pwndbg</span><br><span class="line">sudo #.&#x2F;setup.sh</span><br></pre></td></tr></table></figure>
+
+<h5 id="安装pip："><a href="#安装pip：" class="headerlink" title="安装pip："></a>安装pip：</h5><h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><p>执行如下指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 1. 更新系统包</span><br><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get upgrade</span><br><span class="line"> </span><br><span class="line"># 2. 安装Pip</span><br><span class="line">$ sudo apt-get install python-pip</span><br><span class="line"> </span><br><span class="line"># 3. 检查 pip 是否安装成功</span><br><span class="line">$ pip -V</span><br></pre></td></tr></table></figure>
+
+<h6 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h6><p>参考文献 ：<a target="_blank" rel="noopener" href="https://blog.csdn.net/mrwxh/article/details/79991339?utm_medium=distribute.pc_relevant.none-task-blog-title-8&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/mrwxh/article/details/79991339?utm_medium=distribute.pc_relevant.none-task-blog-title-8&amp;spm=1001.2101.3001.4242</a></p>
 <p>​    01 下载pip：<a target="_blank" rel="noopener" href="https://pypi.org/project/pip/#files"> pip-10.0.0.tar</a></p>
 <p>​    02 将pip包上传至linux操作系统中，并解压</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tar zxvf pip<span class="number">-10.0</span><span class="number">.0</span>.tar.gz</span><br></pre></td></tr></table></figure>
@@ -432,6 +554,7 @@
 
 <p>​    05 检测：Ubuntu 检测是否安装了pip，打开终端 输入  pip3 –version 如图表示成功：</p>
 <p><img src="https://i.loli.net/2020/10/16/2ax9zgHYOEN4Qcw.png" alt="image.png"></p>
+<p>注：链接也可以下载paygame。</p>
 <h4 id="5-安装实用插件"><a href="#5-安装实用插件" class="headerlink" title="5.安装实用插件"></a>5.安装实用插件</h4><p>插件简介：下述三个插件都是python的库</p>
 <p>LibcSearcher用来泄露libc库中函数的偏移的库，</p>
 <p>one_gadget用来寻找libc库中的execve(‘/bin/sh’, NULL, NULL)可以一个gadget就可以getshell</p>
@@ -460,90 +583,6 @@
 <p>解决方法：python2 -m pip install numpy，将py2放在pip安装下的最小单位，使用时调用。</p>
 <p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/franksking/article/details/74025158?utm_medium=distribute.pc_relevant.none-task-blog-title-5&amp;spm=1001.2101.3001.4242">https://blog.csdn.net/franksking/article/details/74025158?utm_medium=distribute.pc_relevant.none-task-blog-title-5&amp;spm=1001.2101.3001.4242</a></p>
 <h5 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h5><p>新建软连接并查看python版本：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021838605">https://segmentfault.com/a/1190000021838605</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dh15219984801.store/2020/09/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/001.jpg">
-      <meta itemprop="name" content="Theothershore">
-      <meta itemprop="description" content="Nothing is impossible!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="蜗牛的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-26 16:36:55" itemprop="dateCreated datePublished" datetime="2020-09-26T16:36:55+08:00">2020-09-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-29 17:47:13" itemprop="dateModified" datetime="2020-09-29T17:47:13+08:00">2020-09-29</time>
-              </span>
-
-          
-            <span id="/2020/09/26/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
