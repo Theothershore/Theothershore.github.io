@@ -6,7 +6,7 @@
   <link href="https://dh15219984801.store/atom.xml" rel="self"/>
   
   <link href="https://dh15219984801.store/"/>
-  <updated>2020-11-05T16:33:28.916Z</updated>
+  <updated>2020-11-06T02:38:36.554Z</updated>
   <id>https://dh15219984801.store/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://dh15219984801.store/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
     <id>https://dh15219984801.store/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</id>
     <published>2020-11-05T16:32:19.148Z</published>
-    <updated>2020-11-05T16:33:28.916Z</updated>
+    <updated>2020-11-06T02:38:36.554Z</updated>
     
     <content type="html"><![CDATA[<p>​                                                        </p><p><strong>查看文件：cat 路径名</strong></p><p><strong>进入文件夹操作：</strong></p><p>当前位置       cd .</p><p>上一级文件位置 cd ..</p><p>返回上一步操作 cd -</p><p>进入Home文件  cd ~</p><p>显示文件路径   pwd</p><p><strong>文件及文件夹操作：</strong></p><p>创建文件 touch <file></p><p>创建文件夹 mkdir <dir></p><p>创建多重文件夹 mkdir -p <dir></p><p>删除文件 rm <file></p><p>删除文件夹 rmdir <dir></p>]]></content>
     
