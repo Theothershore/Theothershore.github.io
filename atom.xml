@@ -6,7 +6,7 @@
   <link href="https://dh15219984801.store/atom.xml" rel="self"/>
   
   <link href="https://dh15219984801.store/"/>
-  <updated>2020-11-06T02:38:36.554Z</updated>
+  <updated>2020-11-25T15:50:16.479Z</updated>
   <id>https://dh15219984801.store/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Ubuntu 16.04 文件及文件夹基础操作</title>
-    <link href="https://dh15219984801.store/2020/11/30/Ubutun16.04/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>https://dh15219984801.store/2020/11/30/Ubutun16.04/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%20-%20%E5%89%AF%E6%9C%AC/</id>
-    <published>2020-11-30T12:51:13.786Z</published>
-    <updated>2020-11-06T02:38:36.554Z</updated>
-    
-    <content type="html"><![CDATA[<p>​                                                        </p><p><strong>查看文件：cat 路径名</strong></p><p><strong>进入文件夹操作：</strong></p><p>当前位置       cd .</p><p>上一级文件位置 cd ..</p><p>返回上一步操作 cd -</p><p>进入Home文件  cd ~</p><p>显示文件路径   pwd</p><p><strong>文件及文件夹操作：</strong></p><p>创建文件 touch <file></p><p>创建文件夹 mkdir <dir></p><p>创建多重文件夹 mkdir -p <dir></p><p>删除文件 rm <file></p><p>删除文件夹 rmdir <dir></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;​                                                        &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;查看文件：cat 路径名&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;进入文件夹操作：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当前</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>jarvisoj_level5</title>
@@ -114,6 +91,29 @@
       
       
     <summary type="html">&lt;p&gt;​                                                                                                                                        </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 16.04 文件及文件夹基础操作</title>
+    <link href="https://dh15219984801.store/2020/11/06/Ubutun16.04/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+    <id>https://dh15219984801.store/2020/11/06/Ubutun16.04/title%20Ubuntu%2016.04%20%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</id>
+    <published>2020-11-05T16:32:19.148Z</published>
+    <updated>2020-11-06T02:38:36.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>​                                                        </p><p><strong>查看文件：cat 路径名</strong></p><p><strong>进入文件夹操作：</strong></p><p>当前位置       cd .</p><p>上一级文件位置 cd ..</p><p>返回上一步操作 cd -</p><p>进入Home文件  cd ~</p><p>显示文件路径   pwd</p><p><strong>文件及文件夹操作：</strong></p><p>创建文件 touch <file></p><p>创建文件夹 mkdir <dir></p><p>创建多重文件夹 mkdir -p <dir></p><p>删除文件 rm <file></p><p>删除文件夹 rmdir <dir></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​                                                        &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看文件：cat 路径名&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;进入文件夹操作：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当前</summary>
       
     
     
